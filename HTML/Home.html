@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-title">
+                <h1>โรงพยาบาลคนไม่เต็ม</h1>
+                <p>ทั้งหมดเป็นโปรเจ็คเพื่อการเรียนรู้</p>
+            </div>
+            <div class="container-search">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-hrader">
+                <p>รายชื่อผู้ป่วย</p>
+                <button type="button"><i class="fa fa-cog" aria-hidden="true"></i></button>
+            </div><!-- container-hrader -->
+
+            <div class="container-setting">
+                <div class="div-form">
+                    <form class="Gender-form form" action="#" method="get">
+                        <label for="dropdown-Gender">เลือกเพศที่คุณต้องการ:</label>
+                        <select id="Gender" name="dropdown-Gender">
+                            <option value="Not-specified-gender">ไม่จำกัดเพศ</option>
+                            <option value="Male">เพศชาย</option>.
+                            <option value="Female">เพศหญิง</option>
+                        </select>
+                    </form>
+                    <form class="Height-form form" action="#" method="get">
+                        <label for="input-Height">ส่วนสูง:</label>
+                        <input type="number" name="input-age" id="input-age" placeholder="ใส่ส่วนสูงที่คูณต้องการ">
+                    </form>
+                    <form class="Weight-form form" action="#" method="get">
+                        <label for="input-Weight">น้ำหนัก:</label>
+                        <input type="number" name="input-age" id="input-age" placeholder="ใส่น้ำหนักที่คูณต้องการ">
+                    </form>
+                    <form class="Age-form form" action="#" method="get">
+                        <label for="input-age">อายุ:</label>
+                        <input type="number" name="input-age" id="input-age" placeholder="ใส่อายุที่คูณต้องการ">
+                    </form>
+                </div>
+                <div class="submit"> <!-- submit button -->
+                    <button type="submit"><p>กดปุ่มเพื่อบันทึกการตั้งค่า</p></button>
+                </div>
+            </div> <!-- container-setting -->
+            <div class="main">
+                <div class="main-from">
+                    <img src="../IMG/OIP.jpg" alt="">
+                    <p>นาย วิทวัส นวลละออง</p>
+                    <p>เพศ: ชาย</p>
+                    <p>ส่วนสูง: 170 cm</p>
+                    <p>น้ำหนัก: 70 kg</p>
+                    <p>อายุ: 25 ปี</p>
+                    <p>โรค: เบาหวาน</p>
+                </div>
+                <div class="main-from">
+                    <img src="../IMG/OIP.jpg" alt="">
+                    <p>นาย วิทวัส นวลละออง</p>
+                    <p>เพศ: ชาย</p>
+                    <p>ส่วนสูง: 170 cm</p>
+                    <p>น้ำหนัก: 70 kg</p>
+                    <p>อายุ: 25 ปี</p>
+                    <p>โรค: เบาหวาน</p>
+                </div>
+            </div>
+            <div class="addurser">
+                <div class="add-button">
+                    <p>+</p>
+                </div>
+                <form class="addurser-form" action="#" method="post">
+                    <h2>เพิ่มผู้ป่วย</h2>
+                    <label for="name">ชื่อผู้ป่วย:</label>
+                    <input type="text" id="name" name="name" required>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- <i class="fas fa-bars"></i> hamburger icon 
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+</body>
